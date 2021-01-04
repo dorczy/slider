@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --black: #000000;
+    --dark-grey: #999999;
+    --grey: #d1d1d1;
+    --light-grey: #f3f3f3;
+    --white: #FFFFFF;
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+body {
+    align-items: center;
+    background-color: var(--light-grey);
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+.container {
+    background-color: var(--black);
+    background-position: center;
+    box-shadow: 1px 1px 5px var(--dark-grey);
+    color: var(--white);
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    justify-content: space-between;
+    padding: 1rem;
+    transition: all .3s ease-out;
+    width: 40rem;
+}
+
+.container__img--counter {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container__img--arrows {
+    font-size: 1.5rem;
+    user-select: none;
+}
+.container__img--arrows, .arrow__prev, .arrow__next {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__img--description {
+    display: flex;
+    justify-content: center;
+}
+
+.dots {
+    user-select: none;
+}
+.fa-circle {
+    color: var(--grey);
+    cursor: pointer;
+    margin: 1.5rem .5rem;
+    text-shadow: 1px 1px 5px var(--dark-grey);
+}
+.current {
+    color: var(--dark-grey);
+}
